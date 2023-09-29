@@ -1,6 +1,10 @@
+import Login from "./pages/Login";
+
 const App = () => {
   return (
-    <div>This is hompage</div>
+    <div>
+      <Login />
+    </div>
   )
 }
 
