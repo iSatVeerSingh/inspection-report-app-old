@@ -9,6 +9,7 @@ type InputFieldProps = {
   required?: boolean;
   placeholder: string;
   icon?: IconType;
+  inputError?: string;
 };
 
 const InputField = ({
@@ -19,6 +20,7 @@ const InputField = ({
   required,
   placeholder,
   icon: Icon,
+  inputError
 }: InputFieldProps) => {
   return (
     <div>
@@ -42,6 +44,7 @@ const InputField = ({
           autoComplete="off"
         />
       </div>
+      {inputError && <span className="text-sm text-red-500">{inputError}</span>}
     </div>
   );
 };
