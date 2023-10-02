@@ -1,9 +1,13 @@
+import DashboardLayout from "./components/DashboardLayout";
 import Login from "./pages/Login";
 
 const App = () => {
   return (
     <div>
-      <Login />
+      {/* <Login /> */}
+      <DashboardLayout>
+        This is content here
+      </DashboardLayout>
     </div>
   )
 }

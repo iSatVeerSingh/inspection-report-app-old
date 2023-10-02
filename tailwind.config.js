@@ -11,7 +11,9 @@ export default {
         "blue-primay": "#0B8AD9",
         "placeholder": "#707070",
         "input-bg": "#F7F7F7",
-        "gray-dark": "#2E3A59"
+        "gray-dark": "#2E3A59",
+        "menu-bg": "#DEE0FC",
+        "menu-link": "#2B3674"
       }
     },
   },
