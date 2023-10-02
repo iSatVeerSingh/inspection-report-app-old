@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <div className="bg-white border-r border-stroke px-2 py-3 grid grid-rows-[auto_40px]">
       <div className="flex flex-col gap-1">
-        {sidebarPages.map(({ name, icon: Icon, path, title }) => (
+        {sidebarPages.map(({ name, icon: Icon, path }) => (
           <Link to={path} key={path}>
             <div
               className={`flex items-center px-3 py-2 gap-1 text-menu-link rounded-md ${

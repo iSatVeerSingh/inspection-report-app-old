@@ -9,7 +9,6 @@ import InspectionNotes from "./pages/InspectionNotes";
 import Users from "./pages/Users";
 import Emails from "./pages/Emails";
 import Settings from "./pages/Settings";
-import IndexPage from "./pages/IndexPage";
 
 const App = () => {
   const router = createBrowserRouter([
