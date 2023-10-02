@@ -12,7 +12,7 @@ export default [
   {
     name: "Jobs",
     icon: JobIcon,
-    path: "/jobs",
+    path: "/",
     title: "All Jobs",
   },
   {
