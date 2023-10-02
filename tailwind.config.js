@@ -13,7 +13,9 @@ export default {
         "input-bg": "#F7F7F7",
         "gray-dark": "#2E3A59",
         "menu-bg": "#DEE0FC",
-        "menu-link": "#2B3674"
+        "menu-link": "#2B3674",
+        "very-light-gray": "#EBEBEB",
+        "status-bg": "#E7F6EA"
       }
     },
   },

@@ -138,3 +138,32 @@ export const LogoutIcon = ({ color, size }: IconProps) => {
     </svg>
   );
 };
+
+export const PersonIcon = ({ color, size }: IconProps) => {
+  return (
+    <svg viewBox="0 0 32 32" fill={color} width={size} height={size}>
+      <g>
+        <path d="M23.74 16.18a1 1 0 1 0-1.41 1.42A9 9 0 0 1 25 24c0 1.22-3.51 3-9 3s-9-1.78-9-3a9 9 0 0 1 2.63-6.37 1 1 0 0 0 0-1.41 1 1 0 0 0-1.41 0A10.92 10.92 0 0 0 5 24c0 3.25 5.67 5 11 5s11-1.75 11-5a10.94 10.94 0 0 0-3.26-7.82Z"></path>
+        <path d="M16 17a7 7 0 1 0-7-7 7 7 0 0 0 7 7Zm0-12a5 5 0 1 1-5 5 5 5 0 0 1 5-5Z"></path>
+      </g>
+    </svg>
+  );
+};
+
+export const LocationIcon = ({ color, size }: IconProps) => {
+  return (
+    <svg viewBox="0 0 32 32" width={size} height={size}>
+      <g
+        fill="none"
+        stroke={color}
+        strokeLinejoin="round"
+        strokeMiterlimit={10}
+        strokeWidth={2}
+        className="stroke-000000"
+      >
+        <path d="M27 12c0-6.075-4.925-11-11-11S5 5.925 5 12c0 8 11 19 11 19s11-11 11-19z" />
+        <circle cx={16} cy={12} r={4} />
+      </g>
+    </svg>
+  );
+};

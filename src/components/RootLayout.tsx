@@ -17,7 +17,7 @@ const RootLayout = () => {
 
 
   return (
-    <div className="grid grid-cols-[250px_auto] h-screen">
+    <div className="grid grid-cols-[250px_auto] h-screen overflow-hidden">
       <div className="grid grid-rows-[60px_auto]">
         <ProfileSidebar className="bg-white border border-stroke" />
         <Sidebar />
