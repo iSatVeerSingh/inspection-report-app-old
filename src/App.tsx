@@ -9,6 +9,8 @@ import InspectionNotes from "./pages/InspectionNotes";
 import Users from "./pages/Users";
 import Emails from "./pages/Emails";
 import Settings from "./pages/Settings";
+import JobDetails, { jobDetailLoader } from "./pages/JobDetails";
+import { loader as jobsLoader } from "./services/jobs";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -20,6 +22,12 @@ const App = () => {
         {
           index: true,
           element: <Jobs />,
+          loader: jobsLoader,
+        },
+        {
+          path: "/jobs/:jobNumber",
+          element: <JobDetails />,
+          loader: jobDetailLoader,
         },
         {
           path: "/reports",

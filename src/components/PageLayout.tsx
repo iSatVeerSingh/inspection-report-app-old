@@ -23,7 +23,7 @@ const PageLayout = ({
           {title}
         </span>
         {titleBtn && (
-          <ButtonPrimary onClick={onTitleBtnClick}>{titleBtn}</ButtonPrimary>
+          <ButtonPrimary className="mr-2" onClick={onTitleBtnClick}>{titleBtn}</ButtonPrimary>
         )}
       </div>
       <div className="overflow-y-scroll p-3">{children}</div>
