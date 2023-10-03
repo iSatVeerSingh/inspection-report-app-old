@@ -15,16 +15,19 @@ type InputFieldProps = {
 const InputField = ({
   type,
   label,
-  id,
   name,
   required,
   placeholder,
   icon: Icon,
-  inputError
+  inputError,
 }: InputFieldProps) => {
   return (
     <div>
-      {label && <label htmlFor={id}>{label}</label>}
+      {label && (
+        <label className="text-xl text-rich-black mb-1" htmlFor={name}>
+          {label}
+        </label>
+      )}
       <div className="relative">
         {Icon && (
           <Icon
@@ -37,7 +40,7 @@ const InputField = ({
             Icon ? "pl-10" : ""
           }`}
           type={type}
-          id={id}
+          id={name}
           name={name}
           placeholder={placeholder}
           required={required}

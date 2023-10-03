@@ -1,17 +1,15 @@
 "use client";
-import { MouseEvent } from "react";
 import PageLayout from "../components/PageLayout";
 import { LocationIcon, PersonIcon } from "../icons/Icons";
-import { Link, useLoaderData } from "react-router-dom";
-import { Job } from "../utils/types";
+import { Link, useNavigate } from "react-router-dom";
+import jobs from "../demo/jobs";
 
 const Jobs = () => {
-  const createCustomJob = (e: MouseEvent) => {
-    e.preventDefault();
-    console.log(e);
-  };
+  const navigate = useNavigate();
 
-  const { jobs } = useLoaderData() as { jobs: Job[] };
+  const createCustomJob = () => {
+    navigate("/jobs/custom-job")
+  };
 
   return (
     <PageLayout
