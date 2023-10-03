@@ -1,14 +1,14 @@
 "use client";
-import PageLayout from "../components/PageLayout";
-import { LocationIcon, PersonIcon } from "../icons/Icons";
+import PageLayout from "../../components/PageLayout";
+import { LocationIcon, PersonIcon } from "../../icons/Icons";
 import { Link, useNavigate } from "react-router-dom";
-import jobs from "../demo/jobs";
+import jobs from "../../demo/jobs";
 
 const Jobs = () => {
   const navigate = useNavigate();
 
   const createCustomJob = () => {
-    navigate("/jobs/custom-job")
+    navigate("/jobs/custom-job");
   };
 
   return (

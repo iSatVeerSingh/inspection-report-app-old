@@ -1,5 +1,5 @@
 import ErrorPage from "./pages/ErrorPage";
-import Jobs from "./pages/Jobs";
+import Jobs from "./pages/jobs/Jobs";
 import Login from "./pages/Login";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Reports from "./pages/Reports";
@@ -9,8 +9,8 @@ import InspectionNotes from "./pages/InspectionNotes";
 import Users from "./pages/Users";
 import Emails from "./pages/Emails";
 import Settings from "./pages/Settings";
-import JobDetails from "./pages/JobDetails";
-import CreateCustomJob from "./pages/CreateCustomJob";
+import JobDetails from "./pages/jobs/JobDetails";
+import CreateCustomJob from "./pages/jobs/CreateCustomJob";
 
 const App = () => {
   const router = createBrowserRouter([

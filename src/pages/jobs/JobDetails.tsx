@@ -1,9 +1,9 @@
 "use client";
-import PageLayout from "../components/PageLayout";
-import { Job } from "../utils/types";
-import ButtonPrimary from "../components/ButtonPrimay";
+import PageLayout from "../../components/PageLayout";
+import { Job } from "../../utils/types";
+import ButtonPrimary from "../../components/ButtonPrimay";
 import { useParams } from "react-router-dom";
-import jobs from "../demo/jobs";
+import jobs from "../../demo/jobs";
 
 const JobDetails = () => {
   const { jobNumber } = useParams();

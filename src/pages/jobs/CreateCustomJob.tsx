@@ -1,8 +1,8 @@
 "use client";
 
-import ButtonPrimary from "../components/ButtonPrimay";
-import InputField from "../components/InputField";
-import PageLayout from "../components/PageLayout";
+import ButtonPrimary from "../../components/ButtonPrimay";
+import InputField from "../../components/InputField";
+import PageLayout from "../../components/PageLayout";
 
 const CreateCustomJob = () => {
   return (
@@ -51,12 +51,7 @@ const CreateCustomJob = () => {
             name="inspector"
             placeholder="Select inspector from list"
           />
-          <InputField
-            type="date"
-            label="Date"
-            name="date"
-            placeholder="Date"
-          />
+          <InputField type="date" label="Date" name="date" placeholder="Date" />
           <InputField
             type="time"
             label="Time"
@@ -69,7 +64,9 @@ const CreateCustomJob = () => {
             name="jobDescription"
             placeholder="Type job description here"
           />
-          <ButtonPrimary className="max-w-[300px]" type="submit">Create Job</ButtonPrimary>
+          <ButtonPrimary className="max-w-[300px]" type="submit">
+            Create Job
+          </ButtonPrimary>
         </form>
       </div>
     </PageLayout>
