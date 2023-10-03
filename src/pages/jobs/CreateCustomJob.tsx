@@ -1,10 +1,14 @@
 "use client";
 
+import { useNavigate } from "react-router-dom";
 import ButtonPrimary from "../../components/ButtonPrimay";
+import ButtonSecondary from "../../components/ButtonSecondary";
 import InputField from "../../components/InputField";
 import PageLayout from "../../components/PageLayout";
 
 const CreateCustomJob = () => {
+  const navigate = useNavigate();
+
   return (
     <PageLayout title="Create Custom Job">
       <div className="bg-white border border-stroke rounded-md min-h-[200px] p-10">
@@ -64,9 +68,17 @@ const CreateCustomJob = () => {
             name="jobDescription"
             placeholder="Type job description here"
           />
-          <ButtonPrimary className="max-w-[300px]" type="submit">
-            Create Job
-          </ButtonPrimary>
+          <div className="flex justify-between">
+            <ButtonPrimary className="min-w-[300px]" type="submit">
+              Create Job
+            </ButtonPrimary>
+            <ButtonSecondary
+              className="min-w-[200px]"
+              onClick={() => navigate(-1)}
+            >
+              Cancel
+            </ButtonSecondary>
+          </div>
         </form>
       </div>
     </PageLayout>

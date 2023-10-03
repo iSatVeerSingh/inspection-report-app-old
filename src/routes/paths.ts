@@ -1,0 +1,9 @@
+export const ROOT = "/";
+export const JOBS = "/jobs";
+export const JOBS_DETAILS = JOBS + "/:jobNumber";
+export const JOB_SUMMARY = JOBS_DETAILS + "/summary";
+export const ADD_INSPECTION_NOTES = JOBS_DETAILS + "/add-notes"
+export const CUSTOM_JOB = JOBS + "/custom-job";
+export const REPORTS = "/reports";
+export const LIBRARY_ITEMS = "/library-items";
+export const INSPECTION_NOTES = "/inspection-notes";

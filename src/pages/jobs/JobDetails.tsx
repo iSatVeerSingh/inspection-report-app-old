@@ -2,10 +2,11 @@
 import PageLayout from "../../components/PageLayout";
 import { Job } from "../../utils/types";
 import ButtonPrimary from "../../components/ButtonPrimay";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import jobs from "../../demo/jobs";
 
 const JobDetails = () => {
+  const navigate = useNavigate();
   const { jobNumber } = useParams();
 
   const job: Job | undefined = jobs.find(
@@ -74,7 +75,7 @@ const JobDetails = () => {
             </span>
           </div>
         </div>
-        <ButtonPrimary className="mt-2">Start Inspection</ButtonPrimary>
+        <ButtonPrimary onClick={()=> navigate("./summary")} className="mt-2">Start Inspection</ButtonPrimary>
       </div>
     </PageLayout>
   );

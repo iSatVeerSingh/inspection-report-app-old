@@ -1,4 +1,4 @@
-import { EventHandler, MouseEventHandler, ReactNode } from "react";
+import { MouseEventHandler, ReactNode } from "react";
 
 type ButtonPrimaryProps = {
   type?: "button" | "submit" | "reset";
@@ -15,7 +15,7 @@ const ButtonPrimary = ({
 }: ButtonPrimaryProps) => {
   return (
     <button
-      className={`bg-blue-primay text-white font-medium text-lg py-1 text-center px-3 rounded-md active:bg-blue-600 ${
+      className={`bg-blue-primay border border-blue-primay text-white font-medium text-lg py-1 text-center px-3 rounded-md active:bg-blue-600 ${
         className ? className : ""
       }`}
       type={type || "button"}
