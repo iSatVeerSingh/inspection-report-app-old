@@ -14,6 +14,7 @@ import Login from "../pages/Login";
 import * as Routes from "./paths";
 import JobSummary from "../pages/jobs/JobSummary";
 import AddInspectionNotes from "../pages/jobs/AddInspectionNotes";
+import AddInspectionItems from "../pages/jobs/AddInspectionItems";
 
 export const router = createBrowserRouter([
   {
@@ -23,7 +24,8 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Jobs />,
+        // element: <Jobs />,
+        element: <AddInspectionItems />
       },
       {
         path: Routes.JOBS_DETAILS,
